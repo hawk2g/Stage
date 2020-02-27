@@ -15,7 +15,7 @@
 
     - name: Cloning PG Blitz v9
       git:
-        repo: "https://github.com/PGBlitz/PGBlitz.com"
+        repo: "https://github.com/hawk2g/PGBlitz.com"
         dest: /pg/pgblitz
         version: "v90"
         force: yes
