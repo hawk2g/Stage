@@ -26,7 +26,7 @@
 
     - name: Clone Role
       git:
-        repo: "https://github.com/PGBlitz/{{pname.stdout}}"
+        repo: "https://github.com/hawk2g/{{pname.stdout}}"
         dest: "/pg/{{prole.stdout}}"
         version: "{{pversion.stdout}}"
         force: yes
