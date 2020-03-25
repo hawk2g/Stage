@@ -8,8 +8,10 @@
 pythonstart () {
 
   installedansible="$(ansible --version | head -n 1 | awk '{print $2}')"
-  ansible="2.7.8"
-  pip="19.0.2"
+  #default 2.7.8
+  ansible="2.9.5"
+  #default 19.0.2
+  pip="19.3.1"
 
   apt-get install -y --reinstall \
       nano \
