@@ -11,7 +11,7 @@
       #python-dev \
       #python-pip
   #python3 -m pip install --disable-pip-version-check --upgrade --force-reinstall pip==19.0.2
-  python3 -m pip install --disable-pip-version-check --upgrade --force-reinstall pip==19.3.1
+  python3 -m pip install --disable-pip-version-check --upgrade --force-reinstall pip==20.0.2
   python3 -m pip install --disable-pip-version-check --upgrade --force-reinstall setuptools
   python3 -m pip install --disable-pip-version-check --upgrade --force-reinstall \
       pyOpenSSL \
