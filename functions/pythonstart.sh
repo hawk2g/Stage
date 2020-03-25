@@ -11,7 +11,7 @@ pythonstart () {
   #default 2.7.8
   ansible="2.9.5"
   #default 19.0.2
-  pip="19.3.1"
+  pip="20.0.2"
 
   apt-get install -y --reinstall \
       nano \
@@ -21,16 +21,16 @@ pythonstart () {
       libffi-dev \
       python3-dev \
       python3-pip \
-      python-dev \
-      python-pip
+      #python-dev \
+      #python-pip
   python3 -m pip install --disable-pip-version-check --upgrade --force-reinstall pip==${pip}
   python3 -m pip install --disable-pip-version-check --upgrade --force-reinstall setuptools
   python3 -m pip install --disable-pip-version-check --upgrade --force-reinstall \
       pyOpenSSL \
       requests \
       netaddr
-  python -m pip install --disable-pip-version-check --upgrade --force-reinstall pip==${pip}
-  python -m pip install --disable-pip-version-check --upgrade --force-reinstall setuptools
+  #python -m pip install --disable-pip-version-check --upgrade --force-reinstall pip==${pip}
+  #python -m pip install --disable-pip-version-check --upgrade --force-reinstall setuptools
 
   # Skip Ansible Install if Version Output Matches
   if [[ "$ansible" != "$installedansible" ]]; then
@@ -39,7 +39,7 @@ pythonstart () {
   fi
 
   # Copy pip to /usr/bin
-  cp /usr/local/bin/pip /usr/bin/pip
+  #cp /usr/local/bin/pip /usr/bin/pip
   cp /usr/local/bin/pip3 /usr/bin/pip3
 
   mkdir -p /etc/ansible/inventories/ 1>/dev/null 2>&1
