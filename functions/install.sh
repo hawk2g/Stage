@@ -76,5 +76,5 @@ prune () {
 
 downloadpg() {
   rm -rf /pg/pgblitz
-  git clone https://github.com/PGBlitz/PGBlitz.com.git /pg/pgblitz
+  git clone https://github.com/hawk2g/PGBlitz.com.git /pg/pgblitz
 }
