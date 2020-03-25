@@ -16,10 +16,10 @@ source "${path27}/pginstall.sh"
 keyvars
 
 # Make Critical Folders
-var59="/pg /pg/logs /pg/var /pg/data /pg/stage /pg/logs /pg/tmp"
-mkdir -p "${var59}"
-chmod 775 "${var59}"
-chown 1000:1000 "${var59}"
+#var59="/pg /pg/logs /pg/var /pg/data /pg/stage /pg/logs /pg/tmp"
+mkdir -p /pg /pg/logs /pg/var /pg/data /pg/stage /pg/logs /pg/tmp
+chmod 775 /pg /pg/logs /pg/var /pg/data /pg/stage /pg/logs /pg/tmp
+chown 1000:1000 /pg /pg/logs /pg/var /pg/data /pg/stage /pg/logs /pg/tmp
 
 # Ensures the user has proper permissions
 #sudocheck
