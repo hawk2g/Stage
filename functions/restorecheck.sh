@@ -7,12 +7,12 @@
 ################################################################################
 restorepg() {
   rm -rf /pg/pgblitz
-  git clone https://github.com/PGBlitz/PGBlitz.com.git /pg/pgblitz
+  git clone https://github.com/hawk2g/PGBlitz.com.git /pg/pgblitz
 }
 
 restorestage() {
   rm -rf /pg/pgstage
-  git clone https://github.com/PGBlitz/PGStage.git /pg/stage
+  git clone https://github.com/hawk2g/PGStage.git /pg/stage
 }
 
 restorecheck() {
