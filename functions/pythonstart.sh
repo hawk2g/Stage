@@ -34,7 +34,8 @@ pythonstart () {
 
   # Skip Ansible Install if Version Output Matches
   if [[ "$ansible" != "$installedansible" ]]; then
-  pip install --disable-pip-version-check --upgrade --force-reinstall ansible==${1-$ansible}
+  #pip install --disable-pip-version-check --upgrade --force-reinstall ansible==${1-$ansible}
+  pip3 install --disable-pip-version-check --upgrade --force-reinstall ansible==${1-$ansible}
   fi
 
   # Copy pip to /usr/bin
